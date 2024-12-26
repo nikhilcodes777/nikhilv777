@@ -14,7 +14,7 @@ const blogs = contentDir.map(file => {
 const Blogs = () => {
   return (
     <MaxWidthWrapper>
-      <h1 className="">
+      <h1 className="text-4xl font-bold mb-3">
         My Blogs
       </h1>
       <main className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 ">

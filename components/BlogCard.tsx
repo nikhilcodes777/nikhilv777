@@ -11,7 +11,7 @@ import Link from 'next/link'
 const BlogCard = ({ title, description, slug }: { title: string, description: string, slug: string }) => {
   return (
     <div>
-      <Card className="h-full">
+      <Card className="h-full flex flex-col">
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           <CardDescription>
@@ -19,7 +19,7 @@ const BlogCard = ({ title, description, slug }: { title: string, description: st
           </CardDescription>
 
         </CardHeader>
-        <CardFooter className="flex justify-between">
+        <CardFooter className="flex justify-between mt-auto">
           <div>Date</div>
           <Button asChild>
             <Link href={`/blog/${slug}`}>
