@@ -1,11 +1,10 @@
 import React from 'react'
 import { ModeToggle } from './theme-toggle'
 import Link from 'next/link'
-import { SiInstagram ,SiLinkedin} from '@icons-pack/react-simple-icons';
-
+import { SiGithub, SiInstagram ,SiLinkedin} from '@icons-pack/react-simple-icons';
 const NavBar = () => {
   return (
-    <nav className="sticky top-0 bg-background/60 backdrop-blur flex h-16 items-center justify-between px-4 border-2 border-foreground rounded-xl m-3">
+    <nav className="sticky z-40 top-0 bg-background/60 backdrop-blur flex h-16 items-center justify-between  border-2 border-foreground rounded-xl my-3 mx-10 px-3">
       <div className="font-extrabold text-xl hover:scale-110 transition-all">
         <Link href="/">Nikhilv777</Link>
 
@@ -25,16 +24,19 @@ const NavBar = () => {
 
         <li className="hover:scale-110">
           <Link href="/blogs">
-            Contact
+            Socials
           </Link>
         </li>
       </ul>
 
       <div className="flex items-center justify-between gap-3">
         <SiInstagram className="hover:scale-110"></SiInstagram>
-        <SiLinkedin></SiLinkedin>
+        <SiGithub className="hover:scale-110"></SiGithub>
+        <SiLinkedin className="hover:scale-110"></SiLinkedin>
         <ModeToggle />
+
       </div>
+
     </nav>
   )
 }

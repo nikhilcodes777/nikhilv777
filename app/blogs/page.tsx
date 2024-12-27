@@ -9,17 +9,17 @@ const blogs = contentDir.map(file => {
   const fileContent = fs.readFileSync(`content/${file}`, 'utf-8')
   const { data } = matter(fileContent)
   const slug = path.basename(file, path.extname(file));
-  return { slug, ...data }
+  return { slug, title: data.title, description: data.description, date: data.date, tags: data.tags }
 })
 const Blogs = () => {
   return (
     <MaxWidthWrapper>
-      <h1 className="text-4xl font-bold mb-3">
+      <h1 className="flex item-center justify-center w-full text-4xl font-bold mb-3">
         My Blogs
       </h1>
       <main className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 ">
         {blogs.map((blog, index) => (
-          <BlogCard title={blog.title} description={blog.description} slug={blog.slug} key={index}></BlogCard>
+          <BlogCard date={blog.date} title={blog.title}  tags={blog.tags} description={blog.description} slug={blog.slug} key={index}></BlogCard>
         ))}
 
       </main>

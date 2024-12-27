@@ -1,6 +1,8 @@
 ---
 title: Understanding Lagrangian Mechanics
 description: Lagrangian Mechanics For Dummies
+date: Dec 27, 2024
+tags: [Physics,Maths]
 ---
 # Understanding Lagrangian Mechanics: A Fundamental Approach to Classical Physics
 
@@ -29,12 +31,11 @@ Lagrangian Mechanics is a reformulation of classical mechanics based on the prin
 Lagrangian mechanics is especially useful when dealing with complicated systems where forces are difficult to directly compute or describe. This method relies on the **Lagrangian**, which is a function that encapsulates the system's kinetic and potential energies, and the **Euler-Lagrange equation**, which provides the equations of motion for the system.
 
 ## The Principle of Least Action
-
 The fundamental concept behind Lagrangian mechanics is the **principle of least action** (also known as Hamilton's principle). This principle states that the motion of a system between two states will follow a path that minimizes the **action**. The action is defined as the integral of the Lagrangian function over time:
 
-\[
-S = \int_{t_1}^{t_2} L(q_i, \dot{q_i}, t) \, dt
-\]
+
+$$S = \int_{t_1}^{t_2} L(q_i, \dot{q_i}, t) \, dt$$
+
 
 Where:
 - \( S \) is the action,
@@ -51,9 +52,9 @@ To derive the Lagrangian equation, we begin by considering the **action** \( S \
 
 The action can be written as:
 
-\[
-S = \int_{t_1}^{t_2} \left( T(q_i, \dot{q_i}) - V(q_i) \right) dt
-\]
+
+$$S = \int_{t_1}^{t_2} \left( T(q_i, \dot{q_i}) - V(q_i) \right) dt$$
+
 
 Where:
 - \( T \) is the kinetic energy of the system,
@@ -61,9 +62,9 @@ Where:
 
 The Lagrangian \( L \) is defined as:
 
-\[
+$$
 L = T - V
-\]
+$$
 
 Next, we apply the principle of least action and take the variation of the action \( \delta S \). This leads to the **Euler-Lagrange equation**, which governs the dynamics of the system.
 
@@ -71,27 +72,27 @@ Next, we apply the principle of least action and take the variation of the actio
 
 The Lagrangian \( L \) is typically written as the difference between the kinetic energy \( T \) and the potential energy \( V \):
 
-\[
+$$
 L = T - V
-\]
+$$
 
 For example, for a simple particle of mass \( m \) moving in one dimension, the kinetic energy is:
 
-\[
-T = \frac{1}{2} m \dot{x}^2
-\]
+
+$$T = \frac{1}{2} m \dot{x}^2$$
+
 
 And the potential energy could be a function of position \( x \), for instance, in a gravitational field:
 
-\[
+$$
 V = mgx
-\]
+$$
 
 Thus, the Lagrangian for this system would be:
 
-\[
+$$
 L = \frac{1}{2} m \dot{x}^2 - mgx
-\]
+$$
 
 The generalized coordinates \( q_i \) represent the configuration of the system, and the generalized velocities \( \dot{q_i} \) describe how the system evolves over time.
 
@@ -99,9 +100,9 @@ The generalized coordinates \( q_i \) represent the configuration of the system,
 
 The Euler-Lagrange equation is the key result from applying the principle of least action. It provides the equations of motion for the system in terms of the Lagrangian:
 
-\[
-\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q_i}} \right) - \frac{\partial L}{\partial q_i} = 0
-\]
+
+$$\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q_i}} \right) - \frac{\partial L}{\partial q_i} = 0$$
+
 
 This equation must be solved for each generalized coordinate \( q_i \) to find the system's trajectory over time. The Euler-Lagrange equation can be applied to a wide variety of systems, including particles moving under forces, rigid bodies, and fields.
 
@@ -113,9 +114,9 @@ Lagrangian mechanics is widely used in physics, from classical mechanics to fiel
 
 Consider a simple pendulum consisting of a mass \( m \) attached to a string of length \( l \), swinging under the influence of gravity. The generalized coordinate is the angle \( \theta \), and the Lagrangian can be written as:
 
-\[
+$$
 L = T - V = \frac{1}{2} m l^2 \dot{\theta}^2 - mgl (1 - \cos\theta)
-\]
+$$
 
 The Euler-Lagrange equation for \( \theta \) will give the equation of motion for the pendulum, which can be solved to describe its oscillatory behavior.
 
@@ -123,9 +124,9 @@ The Euler-Lagrange equation for \( \theta \) will give the equation of motion fo
 
 For a projectile launched from the ground with initial velocity \( v_0 \) at an angle \( \theta \), the Lagrangian can be written as:
 
-\[
+$$
 L = T - V = \frac{1}{2} m (\dot{x}^2 + \dot{y}^2) - mgy
-\]
+$$
 
 By applying the Euler-Lagrange equation, we can derive the equations for the horizontal and vertical motion of the projectile, which are consistent with the standard equations of projectile motion.
 
@@ -133,9 +134,9 @@ By applying the Euler-Lagrange equation, we can derive the equations for the hor
 
 Lagrangian mechanics can also be applied to systems involving electromagnetic fields. For a charged particle in an electromagnetic field, the Lagrangian is:
 
-\[
+$$
 L = \frac{1}{2} m \dot{\mathbf{r}}^2 - q\mathbf{A} \cdot \dot{\mathbf{r}} - V(\mathbf{r})
-\]
+$$
 
 Where \( \mathbf{A} \) is the vector potential of the magnetic field, and \( V(\mathbf{r}) \) is the electric potential. The Euler-Lagrange equation in this case leads to the equations of motion for the charged particle in the field.
 

@@ -1,6 +1,8 @@
 ---
 title: "Understanding the Human Brain"
 description: "A detailed exploration of the human brain, its structure, functions, and how it influences our behavior, emotions, and cognitive abilities."
+date: Dec 26, 2024
+tags: [Physics,Maths]
 ---
 
 # Understanding the Human Brain

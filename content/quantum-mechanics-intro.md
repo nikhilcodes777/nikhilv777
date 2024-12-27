@@ -1,6 +1,8 @@
 ---
 title: A Beginner's Guide To Quantum Mechanics
 description: a brief description about quantum mechanics for new comers to the subject 
+date: Dec 26, 2024
+tags: [Physics,Maths]
 ---
 # A Beginner's Guide to Quantum Mechanics
 
