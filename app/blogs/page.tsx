@@ -19,7 +19,7 @@ const Blogs = () => {
       </h1>
       <main className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 ">
         {blogs.map((blog, index) => (
-          <BlogCard date={blog.date} title={blog.title}  tags={blog.tags} description={blog.description} slug={blog.slug} key={index}></BlogCard>
+          <BlogCard date={blog.date} title={blog.title} tags={blog.tags} description={blog.description} slug={blog.slug} key={index}></BlogCard>
         ))}
 
       </main>

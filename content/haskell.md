@@ -2,7 +2,7 @@
 title: Exploring Functional Programming with Haskell
 description: Understanding Haskell’s syntax, advantages, and how functional programming can change the way you write software.* 
 date: Dec 25, 2024
-tags: [Physics,Maths]
+tags: [Code,Maths]
 ---
 
 ## What is Haskell?

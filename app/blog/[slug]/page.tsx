@@ -39,8 +39,8 @@ const Blog = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const HtmlContent = (await processor.process(content)).toString()
 
   return (
-    <MaxWidthWrapper className="prose dark:prose-invert flex">
-      <div className="px-16" dangerouslySetInnerHTML={{ __html: HtmlContent }} />
+    <MaxWidthWrapper className=" prose dark:prose-invert flex ">
+      <article className="px-12 md:px-16 " dangerouslySetInnerHTML={{ __html: HtmlContent }} />
       <OnThisPage className="text-sm w-[50%]" htmlContent={HtmlContent} />
     </MaxWidthWrapper>
   )
