@@ -13,6 +13,7 @@ import matter from "gray-matter"
 import fs from "fs"
 import { transformerCopyButton } from '@rehype-pretty/transformers'
 import OnThisPage from '@/components/OnThisPage'
+import path from 'path'
 const Blog = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params
   const processor = unified()
@@ -33,7 +34,7 @@ const Blog = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
     })
     .use(rehypeAutolinkHeadings)
-  const filePath = `/public/content/${slug}.md`
+  const filePath = path.join(process.cwd(), 'public', 'content', `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf-8")
   const { content } = matter(fileContent)
   const HtmlContent = (await processor.process(content)).toString()
