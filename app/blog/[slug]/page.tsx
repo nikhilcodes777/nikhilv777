@@ -33,7 +33,7 @@ const Blog = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
     })
     .use(rehypeAutolinkHeadings)
-  const filePath = `content/${slug}.md`
+  const filePath = `/public/content/${slug}.md`
   const fileContent = fs.readFileSync(filePath, "utf-8")
   const { content } = matter(fileContent)
   const HtmlContent = (await processor.process(content)).toString()
